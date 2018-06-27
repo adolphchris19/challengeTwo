@@ -1,0 +1,172 @@
+<!-- String Resources Starts Here -->
+<resources>
+    <!-- Titles -->
+    <string name="app_name">Randa Quiz</string>
+
+    <string name="heading">Welcome</string>
+
+    <string name="category_chemistry">Chemistry</string>
+
+    <string name="category_physics">Physics</string>
+
+    <string name="category_mathematics">Mathematics</string>
+
+    <string name="category_english">English Language</string>
+
+    <!-- All the texts used in the about me Page-->
+    <string name="myself">"@"adolphchris19</string>
+    <string name="followers">Followers</string>
+    <string name="number_of_followers">108</string>
+    <string name="following">Following</string>
+    <string name="number_of_following">60</string>
+    <string name="tweets">Tweets</string>
+    <string name="number_of_tweets">90</string>
+
+    <string name="email">adolphchris19@gmail.com</string>
+    <string name="phone">(+234) 9090605708</string>
+    <string name="country">Nigerian</string>
+    <string name="finish">Finish</string>
+    <!--End of the texts used-->
+
+    <!--Chemistry starts here-->
+    <string name="title">Chemistry Quiz</string>
+
+    <string name="question1">1.An Element X has 127 neutrons and 82 electrons. What is the atomic number of the element?</string>
+    <string name="answer1a">45</string>
+    <string name="answer1b">209</string>
+    <string name="answer1c">82</string>
+    <string name="answer1d">127</string>
+
+    <string name="question2">2.An ExamPle of a strong electrolyte is?</string>
+    <string name="answer2a">Sodium Formate</string>
+    <string name="answer2b">Ethanol</string>
+    <string name="answer2c">Ethyl</string>
+    <string name="answer2d">formic acid</string>
+
+    <string name="question3">3.What is the formation of iron III oxide in the Presence of air and moisture?</string>
+    <string name="answer3a">Burning</string>
+    <string name="answer3b">Rusting</string>
+    <string name="answer3c">Oxidation</string>
+    <string name="answer3d">Redox Reaction</string>
+
+    <string name="question4">4.What is formed at the cathode during the electrolysis of Sodium Chloride with carbon electrolytes.</string>
+    <string name="answer4a">Ammonia</string>
+    <string name="answer4b">Hydrogen</string>
+    <string name="answer4c">Chlorine</string>
+    <string name="answer4d">Sodium Carbonate</string>
+
+    <string name="question5">5.The nucleus of an Atom consists of?</string>
+    <string name="answer5a">Gluttons</string>
+    <string name="answer5b">Protons</string>
+    <string name="answer5c">Electron</string>
+    <string name="answer5d">Neutrons</string>
+
+    <string name="question6">6.Sodium Chloride can be obtained from Brine by?</string>
+
+    <string name="question7">7.What is the First and Tenth Element on the Periodic Table</string>
+    <string name="answer7a">Helium</string>
+    <string name="answer7b">Hydrogen</string>
+    <string name="answer7c">Carbon</string>
+    <string name="answer7d">Neon</string>
+
+    <string name="question8">8.What is a substance whose atoms all have the same number of protons</string>
+
+    <string name="question9">9.What are the two nuclear reactions that produce energy</string>
+    <string name="answer9a">Nuclear Reactor</string>
+    <string name="answer9b">Nuclear Fusion</string>
+    <string name="answer9c">Nuclear Bomb</string>
+    <string name="answer9d">Nuclear Fission</string>
+
+    <string name="question10">10.Any substance with a PH less than 7 is called what?</string>
+
+
+    <!--Answers Text Here-->
+    <string name="ans1">The correct answer is 82</string>
+    <string name="ans2">The correct answer is Sodium Formate</string>
+    <string name="ans3">The correct answer is Rusting</string>
+    <string name="ans4">The correct answer is Hydrogen</string>
+    <string name="ans5">The correct answers are Protons and Neutrons only </string>
+    <string name="ans6">The correct answer is Evaporation</string>
+    <string name="ans7">The correct answers are Hydrogen and Neon only </string>
+    <string name="ans8">The correct answer is Element</string>
+    <string name="ans9">The correct answers are Nuclear Fission and Nuclear Fusion only </string>
+    <string name="ans10"> The correct answer is Acid </string>
+    <!--Chemistry Ends Here-->
+
+
+
+    <!--Physics Questions Start here-->
+
+    <string name="titlePhysics">Chemistry Quiz</string>
+
+    <string name="questionPhysics1">1.An Element X has 127 neutrons and 82 electrons. What is the atomic number of the element?</string>
+    <string name="answerPhysics1a">45</string>
+    <string name="answerPhysics1b">209</string>
+    <string name="answerPhysics1c">82</string>
+    <string name="answerPhysics1d">127</string>
+
+    <string name="questionPhysics2">2.An ExamPle of a strong electrolyte is?</string>
+    <string name="answerPhysics2a">Sodium Formate</string>
+    <string name="answerPhysics2b">Ethanol</string>
+    <string name="answerPhysics2c">Ethyl</string>
+    <string name="answerPhysics2d">formic acid</string>
+
+    <string name="questionPhysics3">3.What is the formation of iron III oxide in the Presence of air and moisture?</string>
+    <string name="answerPhysics3a">Burning</string>
+    <string name="answerPhysics3b">Rusting</string>
+    <string name="answerPhysics3c">Oxidation</string>
+    <string name="answerPhysics3d">Redox Reaction</string>
+
+    <string name="questionPhysics4">4.What is formed at the cathode during the electrolysis of Sodium Chloride with carbon electrolytes.</string>
+    <string name="answerPhysics4a">Ammonia</string>
+    <string name="answerPhysics4b">Hydrogen</string>
+    <string name="answerPhysics4c">Chlorine</string>
+    <string name="answerPhysics4d">Sodium Carbonate</string>
+
+    <string name="questionPhysics5">5.The nucleus of an Atom consists of?</string>
+    <string name="answerPhysics5a">Gluttons</string>
+    <string name="answerPhysics5b">Protons</string>
+    <string name="answerPhysics5c">Electron</string>
+    <string name="answerPhysics5d">Neutrons</string>
+
+    <string name="questionPhysics6">6.Sodium Chloride can be obtained from Brine by?</string>
+
+    <string name="questionPhysics7">7.What is the First and Tenth Element on the Periodic Table</string>
+    <string name="answerPhysics7a">Helium</string>
+    <string name="answerPhysics7b">Hydrogen</string>
+    <string name="answerPhysics7c">Carbon</string>
+    <string name="answerPhysics7d">Neon</string>
+
+    <string name="questionPhysics8">8.What is a substance whose atoms all have the same number of protons</string>
+
+    <string name="questionPhysics9">9.What are the two nuclear reactions that produce energy</string>
+    <string name="answerPhysics9a">Nuclear Reactor</string>
+    <string name="answerPhysics9b">Nuclear Fusion</string>
+    <string name="answerPhysics9c">Nuclear Bomb</string>
+    <string name="answerPhysics9d">Nuclear Fission</string>
+
+    <string name="questionPhysics10">10.Any substance with a PH less than 7 is called what?</string>
+
+
+    <!--Answers Text Here-->
+    <string name="ansPhysics1">The correct answer is 82</string>
+    <string name="ansPhysics2">The correct answer is Sodium Formate</string>
+    <string name="ansPhysics3">The correct answer is Rusting</string>
+    <string name="ansPhysics4">The correct answer is Hydrogen</string>
+    <string name="ansPhysics5">The correct answers are Protons and Neutrons only </string>
+    <string name="ansPhysics6">The correct answer is Evaporation</string>
+    <string name="ansPhysics7">The correct answers are Hydrogen and Neon only </string>
+    <string name="ansPhysics8">The correct answer is Element</string>
+    <string name="ansPhysics9">The correct answers are Nuclear Fission and Nuclear Fusion only </string>
+    <string name="ansPhysics10"> The correct answer is Acid </string>
+
+    <!--Physics Question ends here-->
+
+    <!--Button and Result DisPlay Texts here-->
+    <string name="submit">Submit</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="results">Your Total score is %1$d</string>
+
+</resources>
+<!--String Resources Ends-->

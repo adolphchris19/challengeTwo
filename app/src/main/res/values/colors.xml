@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="brown">#4A312A</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="darkBrown">#2F1D1A</color>
+
+    <!-- Background color for app -->
+    <color name="tan_background">#FFF7DA</color>
+
+    <!-- Background color for the numbers category -->
+    <color name="category_mathematics">#FD8E09</color>
+
+    <!-- Background color for the family members category -->
+    <color name="category_english">#379237</color>
+
+    <!-- Background color for the colors category -->
+    <color name="category_physics">#8800A0</color>
+
+    <!-- Background color for the phrases category -->
+    <color name="category_chemistry">#16AFCA</color>
+
+        <color name="colorPrimary">#8BC34A</color>
+        <color name="colorPrimaryDark">#689F38</color>
+        <color name="primary_light">#DCEDC8</color>
+        <color name="colorAccent">#ffea00</color>
+        <color name="textOne">#212121</color>
+        <color name="textTwo">#757575</color>
+        <color name="icons">#212121</color>
+        <color name="divider">#BDBDBD</color>
+        <color name="warning">#4de53935</color>
+        <color name="light_green">#7564dd17</color>
+        <color name="black">#000000</color>
+        <color name="white">#ffffff</color>
+        <color name="red">#8B0000</color>
+    <color name="blue">#0080FF</color>
+</resources>
