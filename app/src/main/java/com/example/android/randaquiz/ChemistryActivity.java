@@ -704,7 +704,7 @@ public class ChemistryActivity extends AppCompatActivity {
     }
 
     public void nextPage(View view){
-        startActivity(new Intent(this, AboutMe.class));
+        startActivity(new Intent(this, PhysicsActivity.class));
     }
     public void previousPage(View view) {
         startActivity(new Intent(this, EnglishActivity.class));

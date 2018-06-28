@@ -97,9 +97,9 @@
 
     <!--Physics Questions Start here-->
 
-    <string name="titlePhysics">Chemistry Quiz</string>
+    <string name="titlePhysics">Physics Quiz</string>
 
-    <string name="questionPhysics1">1.An Element X has 127 neutrons and 82 electrons. What is the atomic number of the element?</string>
+    <string name="questionPhysics1">1.I am angry. Are you?</string>
     <string name="answerPhysics1a">45</string>
     <string name="answerPhysics1b">209</string>
     <string name="answerPhysics1c">82</string>
