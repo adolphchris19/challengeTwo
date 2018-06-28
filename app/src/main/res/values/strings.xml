@@ -99,45 +99,45 @@
 
     <string name="titlePhysics">Physics Quiz</string>
 
-    <string name="questionPhysics1">1.I am angry. Are you?</string>
+    <string name="questionPhysics1">1.Electric resistance is typically measured in what units??</string>
     <string name="answerPhysics1a">45</string>
     <string name="answerPhysics1b">209</string>
-    <string name="answerPhysics1c">82</string>
+    <string name="answerPhysics1c">Ohms</string>
     <string name="answerPhysics1d">127</string>
 
-    <string name="questionPhysics2">2.An ExamPle of a strong electrolyte is?</string>
-    <string name="answerPhysics2a">Sodium Formate</string>
+    <string name="questionPhysics2">2.What scientist is well known for his theory of relativity??</string>
+    <string name="answerPhysics2a">Albert Einstein</string>
     <string name="answerPhysics2b">Ethanol</string>
     <string name="answerPhysics2c">Ethyl</string>
     <string name="answerPhysics2d">formic acid</string>
 
-    <string name="questionPhysics3">3.What is the formation of iron III oxide in the Presence of air and moisture?</string>
+    <string name="questionPhysics3">3.Electric power is typically measured in what units?</string>
     <string name="answerPhysics3a">Burning</string>
-    <string name="answerPhysics3b">Rusting</string>
+    <string name="answerPhysics3b">watts</string>
     <string name="answerPhysics3c">Oxidation</string>
     <string name="answerPhysics3d">Redox Reaction</string>
 
-    <string name="questionPhysics4">4.What is formed at the cathode during the electrolysis of Sodium Chloride with carbon electrolytes.</string>
-    <string name="answerPhysics4a">Ammonia</string>
-    <string name="answerPhysics4b">Hydrogen</string>
+    <string name="questionPhysics4">4.A magnifying glass is what type of lens?.</string>
+    <string name="answerPhysics4a">concave</string>
+    <string name="answerPhysics4b">convex</string>
     <string name="answerPhysics4c">Chlorine</string>
     <string name="answerPhysics4d">Sodium Carbonate</string>
 
-    <string name="questionPhysics5">5.The nucleus of an Atom consists of?</string>
-    <string name="answerPhysics5a">Gluttons</string>
-    <string name="answerPhysics5b">Protons</string>
-    <string name="answerPhysics5c">Electron</string>
-    <string name="answerPhysics5d">Neutrons</string>
+    <string name="questionPhysics5">5.From the oPtions below, choose two Particles of a radioactive emissions?</string>
+    <string name="answerPhysics5a">Omega Particles </string>
+    <string name="answerPhysics5b">AlPha Particles</string>
+    <string name="answerPhysics5c">Delta Particles</string>
+    <string name="answerPhysics5d">Beta Particles</string>
 
-    <string name="questionPhysics6">6.Sodium Chloride can be obtained from Brine by?</string>
+    <string name="questionPhysics6">6.Conductors have a high or low resistance? Answer with either High or Low </string>
 
-    <string name="questionPhysics7">7.What is the First and Tenth Element on the Periodic Table</string>
-    <string name="answerPhysics7a">Helium</string>
-    <string name="answerPhysics7b">Hydrogen</string>
+    <string name="questionPhysics7">7.From the oPtions ck two forms of energy that you know.</string>
+    <string name="answerPhysics7a">Power</string>
+    <string name="answerPhysics7b">Kinetic </string>
     <string name="answerPhysics7c">Carbon</string>
-    <string name="answerPhysics7d">Neon</string>
+    <string name="answerPhysics7d">Potential </string>
 
-    <string name="questionPhysics8">8.What is a substance whose atoms all have the same number of protons</string>
+    <string name="questionPhysics8">8.A person who studies Physics is known as a?</string>
 
     <string name="questionPhysics9">9.What are the two nuclear reactions that produce energy</string>
     <string name="answerPhysics9a">Nuclear Reactor</string>
@@ -145,22 +145,91 @@
     <string name="answerPhysics9c">Nuclear Bomb</string>
     <string name="answerPhysics9d">Nuclear Fission</string>
 
-    <string name="questionPhysics10">10.Any substance with a PH less than 7 is called what?</string>
+    <string name="questionPhysics10">10.True or false? Metal is a good conductor.</string>
 
 
     <!--Answers Text Here-->
-    <string name="ansPhysics1">The correct answer is 82</string>
-    <string name="ansPhysics2">The correct answer is Sodium Formate</string>
-    <string name="ansPhysics3">The correct answer is Rusting</string>
-    <string name="ansPhysics4">The correct answer is Hydrogen</string>
-    <string name="ansPhysics5">The correct answers are Protons and Neutrons only </string>
-    <string name="ansPhysics6">The correct answer is Evaporation</string>
-    <string name="ansPhysics7">The correct answers are Hydrogen and Neon only </string>
-    <string name="ansPhysics8">The correct answer is Element</string>
+    <string name="ansPhysics1">The correct answer is Ohms</string>
+    <string name="ansPhysics2">The correct answer is Albert Einstein</string>
+    <string name="ansPhysics3">The correct answer is watts</string>
+    <string name="ansPhysics4">The correct answer is Convex</string>
+    <string name="ansPhysics5">The correct answers are AlPha Particles and Beta Particles </string>
+    <string name="ansPhysics6">The correct answer is Low</string>
+    <string name="ansPhysics7">The correct answers are Kinetic and Potential </string>
+    <string name="ansPhysics8">The correct answer is Physicist</string>
     <string name="ansPhysics9">The correct answers are Nuclear Fission and Nuclear Fusion only </string>
-    <string name="ansPhysics10"> The correct answer is Acid </string>
+    <string name="ansPhysics10"> The correct answer is "True" </string>
 
     <!--Physics Question ends here-->
+
+
+    <!--Mathematics Questions Start here-->
+
+    <string name="titleMathematics">Mathematics Quiz</string>
+
+    <string name="questionMathematics1">1.I am angry. Are you?</string>
+    <string name="answerMathematicss1a">45</string>
+    <string name="answerMathematics1b">209</string>
+    <string name="answerMathematics1c">82</string>
+    <string name="answerMathematics1d">127</string>
+
+    <string name="questionMathematics2">2.An ExamPle of a strong electrolyte is?</string>
+    <string name="answerMathematics2a">Sodium Formate</string>
+    <string name="answerMathematics2b">Ethanol</string>
+    <string name="answerMathematics2c">Ethyl</string>
+    <string name="answerMathematics2d">formic acid</string>
+
+    <string name="questionMathematics3">3.What is the formation of iron III oxide in the Presence of air and moisture?</string>
+    <string name="answerMathematics3a">Burning</string>
+    <string name="answerMathematics3b">Rusting</string>
+    <string name="answerMathematics3c">Oxidation</string>
+    <string name="answerMathematics3d">Redox Reaction</string>
+
+    <string name="questionMathematics4">4.What is formed at the cathode during the electrolysis of Sodium Chloride with carbon electrolytes.</string>
+    <string name="answerMathematics4a">Ammonia</string>
+    <string name="answerMathematics4b">Hydrogen</string>
+    <string name="answerMathematics4c">Chlorine</string>
+    <string name="answerMathematics4d">Sodium Carbonate</string>
+
+    <string name="questionMathematics5">5.The nucleus of an Atom consists of?</string>
+    <string name="answerMathematics5a">Gluttons</string>
+    <string name="answerMathematics5b">Protons</string>
+    <string name="answerMathematics5c">Electron</string>
+    <string name="answerMathematics5d">Neutrons</string>
+
+    <string name="questionMathematics6">6.Sodium Chloride can be obtained from Brine by?</string>
+
+    <string name="questionMathematics7">7.What is the First and Tenth Element on the Periodic Table</string>
+    <string name="answerMathematics7a">Helium</string>
+    <string name="answerMathematics7b">Hydrogen</string>
+    <string name="answerMathematics7c">Carbon</string>
+    <string name="answerMathematics7d">Neon</string>
+
+    <string name="questionMathematics8">8.What is a substance whose atoms all have the same number of protons</string>
+
+    <string name="questionMathematics9">9.What are the two nuclear reactions that produce energy</string>
+    <string name="answerMathematics9a">Nuclear Reactor</string>
+    <string name="answerMathematics9b">Nuclear Fusion</string>
+    <string name="answerMathematics9c">Nuclear Bomb</string>
+    <string name="answerMathematics9d">Nuclear Fission</string>
+
+    <string name="questionMathematics10">10.Any substance with a PH less than 7 is called what?</string>
+
+
+    <!--Answers Text Here-->
+    <string name="ansMathematics1">The correct answer is 82</string>
+    <string name="ansMathematics2">The correct answer is Sodium Formate</string>
+    <string name="ansMathematics3">The correct answer is Rusting</string>
+    <string name="ansMathematics4">The correct answer is Hydrogen</string>
+    <string name="ansMathematics5">The correct answers are Protons and Neutrons only </string>
+    <string name="ansMathematics6">The correct answer is Evaporation</string>
+    <string name="ansMathematics7">The correct answers are Hydrogen and Neon only </string>
+    <string name="ansMathematics8">The correct answer is Element</string>
+    <string name="ansMathematics9">The correct answers are Nuclear Fission and Nuclear Fusion only </string>
+    <string name="ansMathematics10"> The correct answer is Acid </string>
+
+    <!--Mathematics Question ends here-->
+
 
     <!--Button and Result DisPlay Texts here-->
     <string name="submit">Submit</string>
