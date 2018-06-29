@@ -226,7 +226,7 @@
     <string name="answerMathematics9c">Newton Triangle</string>
     <string name="answerMathematics9d">Scalene Triangle</string>
 
-    <string name="questionMathematics10">10.32 is 40% of what number?</string>
+    <string name="questionMathematics10">10.  32 is 40% of what number?</string>
 
 
     <!--Answers Text Here-->
@@ -242,6 +242,83 @@
     <string name="ansMathematics10"> The correct answer is 80</string>
 
     <!--Mathematics Question ends here-->
+
+
+
+    <!--Chemistry starts here-->
+    <string name="titleEnglish">Chemistry Quiz</string>
+
+
+    <string name="comPrehensionPassage">Read the Passage below and answer the questions that follows \n \n \n
+    An earthquake comes like a thief in the night, without warning.
+        It was necessary, therefore to invent instruments that neither
+        slumbered nor slept. Some devices were quite simple.
+        One, for instance, consisted of rods of various lengths
+        and thicknesses which would stand up on end like ninepins.
+        When a shock came it shook the rigid table upon which these stood.
+        If it were gentle, only the more unstable rods fell.
+        If it were severe, they all fell. Thus, the rods by falling and by
+        the direction in which they fell, recorded for the slumbering
+        scientist, the strength of a shock that was too weak to waken
+        him and the direction from which it came. But, instruments far more delicate
+        than that were needed if any really serious advance was to be made. \n \n \n
+
+        The ideal to be aimed at was to devise an instrument that
+        could record with a pen on paper the movements, of the ground or
+        of the table, as the quake passed by. While I write my pen moves
+        but the paper keeps still. With practice, no doubt, I could, in time,
+        learn to write by holding the pen still while the paper moved.
+        That sounds a silly suggestion, but that was precisely the idea
+        adopted in some of the early instruments (seismometers) for recording
+        earthquake waves. But when table, penholder and paper are all
+        moving how is it possible to write legibly ?
+        The key to a solution of that problem lay in an everyday observation.
+        Why does a person standing in a bus or train tend to fall when a
+        sudden start is made ?
+        It is because his feet move on, but his head stays still. \n \n \n
+
+    </string>
+
+    <string name="questionEnglish1">1. This passage says that early instruments for measuring earthquakes were </string>
+    <string name="answerEnglish1a">expensive</string>
+    <string name="answerEnglish1b">not sturdy</string>
+    <string name="answerEnglish1c">not sensitive enough ( c)</string>
+    <string name="answerEnglish1d">faulty in design</string>
+
+    <string name="questionEnglish2">2. Why was it necessary to invent instruments to observe an earthquake ? </string>
+    <string name="answerEnglish2a"> Because an earthquake comes like a thief in the night ( c)</string>
+    <string name="answerEnglish2b">To make people alert about earthquake during their conscious as well as unconscious hours</string>
+    <string name="answerEnglish2c">To experiment with the control of man over nature</string>
+    <string name="answerEnglish2d">To prove that we are technically advanced</string>
+
+    <string name="questionEnglish3">3. A simple device which consisted of
+        rods that stood up on end like ninepins was
+        replaced by a more sophisticated one because it failed</string>
+    <string name="answerEnglish3a">to measure a severe earthquake</string>
+    <string name="answerEnglish3b">to record the facts with a pen on paper ( c)</string>
+    <string name="answerEnglish3c">to measure a gentle earthquake </string>
+    <string name="answerEnglish3d">to record the direction of the earthquake</string>
+
+    <string name="questionEnglish4">4. The everyday observation referred to in the passage relates to </string>
+    <string name="answerEnglish4a">the sudden start of a bus</string>
+    <string name="answerEnglish4b">the tendency of a standing person to fall when a bus or train moves suddenly ( c)</string>
+    <string name="answerEnglish4c">a moving bus or train</string>
+    <string name="answerEnglish4d">people standing in a bus or train</string>
+
+    <string name="questionEnglish5">5.The early seismometers adoed the idea that in order
+         to record the earthquake, it is</string>
+    <string name="answerEnglish5a">both pen and paper that should move</string>
+    <string name="answerEnglish5b">the pen that should stay still and the paper should move</string>
+    <string name="answerEnglish5c">the pen that should move just as it moves when we write on paper ( c)</string>
+    <string name="answerEnglish5d">neither pen nor paper that should move</string>
+
+    <!--Answers Text Here-->
+    <string name="ansEnglish1">The correct answer is 90</string>
+    <string name="ansEnglish2">The correct answer is 6.4%</string>
+    <string name="ansEnglish3">The correct answer is 0.4</string>
+    <string name="ansEnglish4">The correct answer is 2100</string>
+    <string name="ansEnglish5">The correct answers are 180 and 360 only </string>
+    <!--End of english questions here-->
 
 
     <!--Button and Result DisPlay Texts here-->

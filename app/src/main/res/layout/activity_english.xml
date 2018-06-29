@@ -1,9 +1,560 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".EnglishActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <!--overall-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/titleEnglish"
+            android:textSize="45sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textTwo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/comPrehensionPassage"/>
+
+        <!--question 1-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/questionMathematics1"
+                    android:textColor="@color/textOne"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/button_1a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/answerMathematics1a"
+                        android:textColor="@color/textTwo" />
+
+                    <RadioButton
+                        android:id="@+id/button_1b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/answerMathematics1b"
+                        android:textColor="@color/textTwo" />
+
+                    <RadioButton
+                        android:id="@+id/button_1c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/answerMathematics1c"
+                        android:textColor="@color/textTwo" />
+
+                    <RadioButton
+                        android:id="@+id/button_1d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/answerMathematics1d"
+                        android:textColor="@color/textTwo" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/answerMathematics1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry"
+                    android:textStyle="italic"
+                    android:textColor="@color/textOne"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!--end of question 1-->
+
+        <!--question 2-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/questionMathematics2"
+                    android:textColor="@color/textOne"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/button_2a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/answerMathematics2a"
+                        android:textColor="@color/textTwo" />
+
+                    <RadioButton
+                        android:id="@+id/button_2b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics2b"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+
+                    <RadioButton
+                        android:id="@+id/button_2c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics2c"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+
+                    <RadioButton
+                        android:id="@+id/button_2d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics2d"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/answerMathematics2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry"
+                    android:textStyle="italic"
+                    android:textColor="@color/textOne"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!--end of question 2-->
+
+        <!--question 3-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/questionMathematics3"
+                    android:textColor="@color/textOne"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/button_3a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics3a"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+
+                    <RadioButton
+                        android:id="@+id/button_3b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics3b"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+
+                    <RadioButton
+                        android:id="@+id/button_3c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics3c"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+
+                    <RadioButton
+                        android:id="@+id/button_3d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics3d"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/answerMathematics3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry"
+                    android:textStyle="italic"
+                    android:textColor="@color/textOne"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!--end of question 3-->
+
+        <!--question 4-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/questionMathematics4"
+                    android:textColor="@color/textOne"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/button_4a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics4a"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+
+                    <RadioButton
+                        android:id="@+id/button_4b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics4b"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+
+                    <RadioButton
+                        android:id="@+id/button_4c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics4c"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+
+                    <RadioButton
+                        android:id="@+id/button_4d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics4d"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/answerMathematics4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry"
+                    android:textStyle="italic"
+                    android:textColor="@color/textOne"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!--end of question 4-->
+
+
+
+
+        <!--question 5-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/questionMathematics4"
+                    android:textColor="@color/textOne"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/button_5a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics4a"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+
+                    <RadioButton
+                        android:id="@+id/button_5b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics4b"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+
+                    <RadioButton
+                        android:id="@+id/button_5c"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics4c"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+
+                    <RadioButton
+                        android:id="@+id/button_5d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingEnd="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/answerMathematics4d"
+                        android:textColor="@color/textTwo"
+                        tools:ignore="RtlSymmetry" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/answerMathematics5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingStart="10dp"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    tools:ignore="RtlSymmetry"
+                    android:textStyle="italic"
+                    android:textColor="@color/textOne"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!--end of question 5-->
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/results"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="@color/textOne"
+                android:textSize="18sp"
+                android:visibility="gone"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="submitButton"
+                android:text="@string/submit"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="17sp"
+                android:background="@drawable/state_enabled"/>
+
+            <Button
+                android:id="@+id/previous_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="previousPage"
+                android:text="@string/previous"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/previous"/>
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="nextPage"
+                android:text="@string/next"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/next"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--This is the end of code layouts-->
+</ScrollView>
