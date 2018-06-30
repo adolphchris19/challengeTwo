@@ -1,14 +1,11 @@
 package com.example.android.randaquiz;
 
 import android.content.Intent;
-import android.support.design.widget.TextInputEditText;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.Html;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -19,7 +16,7 @@ public class EnglishActivity extends AppCompatActivity {
 
 
     // Declaration of global variables.
-    int score = 0, scoreTwo =0, scoreThree = 0, scoreFour = 0, scoreFive = 0, scoreSix = 0, scoreSeven = 0, scoreEight = 0, scoreNine = 0, scoreTen =0;
+    int score = 0, scoreTwo =0, scoreThree = 0, scoreFour = 0, scoreFive = 0;
 
     //Beginning of the onCreate method
     @Override
@@ -86,7 +83,7 @@ public class EnglishActivity extends AppCompatActivity {
 
             case R.id.button_3b:
                 if (checked)
-                    scoreThree = 1;
+                    scoreThree += 1;
                 break;
 
             case R.id.button_3c:
@@ -108,7 +105,7 @@ public class EnglishActivity extends AppCompatActivity {
 
             case R.id.button_4b:
                 if (checked)
-                    scoreFour = 1;
+                    scoreFour += 1;
                 break;
 
             case R.id.button_4c:
@@ -121,123 +118,35 @@ public class EnglishActivity extends AppCompatActivity {
                     scoreFour = 0;
                 break;
             //End of question 4
+
+                        //Beginning of question 5
+            case R.id.button_5a:
+                if (checked)
+                    scoreFive += 0;
+                break;
+
+            case R.id.button_5b:
+                if (checked)
+                    scoreFive = 0;
+                break;
+
+            case R.id.button_5c:
+                if (checked)
+                    scoreFive += 1;
+                break;
+
+            case R.id.button_5d:
+                if (checked)
+                    scoreFive = 0;
+                break;
+            //End of question 5
         }
     }
 
-    // Beginning of Question 5
-    public void onCheckboxClicked(View view){
-        switch (view.getId()){
-            case R.id.checkbox_5a:
-                doubleCheckedboxes();
-                break;
 
-            case R.id.checkbox_5b:
-                doubleCheckedboxes();
-                break;
 
-            case R.id.checkbox_5c:
-                doubleCheckedboxes();
-                break;
 
-            case R.id.checkbox_5d:
-                doubleCheckedboxes();
-                break;
-        }
-    }
 
-    private void doubleCheckedboxes(){
-        CheckBox CB1 = findViewById(R.id.checkbox_5a);//wrong answer
-        CheckBox CB2 = findViewById(R.id.checkbox_5b);//correct answer
-        CheckBox CB3 = findViewById(R.id.checkbox_5c);//wrong answer
-        CheckBox CB4 = findViewById(R.id.checkbox_5d);//correct answer
-
-        boolean correctAnswer = CB2.isChecked() && CB4.isChecked();
-        boolean wrongAnswer = CB1.isChecked() || CB3.isChecked();
-
-        if (correctAnswer && !wrongAnswer){
-            scoreFive =+ 1;
-        }else {
-            scoreFive = 0;
-        }
-    }
-    //End of Question 5
-
-    //Beginning of Question Seven
-    public void onCheckboxClickedTwo(View view){
-        switch (view.getId()){
-            case R.id.checkbox_7a:
-                doubleCheckedboxesTwo();
-                break;
-
-            case R.id.checkbox_7b:
-                doubleCheckedboxesTwo();
-                break;
-
-            case R.id.checkbox_7c:
-                doubleCheckedboxesTwo();
-                break;
-
-            case R.id.checkbox_7d:
-                doubleCheckedboxesTwo();
-                break;
-        }
-    }
-
-    private void doubleCheckedboxesTwo(){
-        CheckBox secondCB1 = findViewById(R.id.checkbox_7a);//wrong answer
-        CheckBox secondCB2 = findViewById(R.id.checkbox_7b);//correct answer
-        CheckBox secondCB3 = findViewById(R.id.checkbox_7c);//wrong answer
-        CheckBox secondCB4 = findViewById(R.id.checkbox_7d);//correct answer
-
-        boolean correctAnswer = secondCB2.isChecked() && secondCB4.isChecked();
-        boolean wrongAnswer = secondCB1.isChecked() || secondCB3.isChecked();
-
-        if (correctAnswer && !wrongAnswer){
-            scoreSeven =+ 1;
-        }else {
-            scoreSeven = 0;
-        }
-    }
-
-    //End Question Seven
-
-    //Beginning of Question Nine
-    public void onCheckboxClickedThree(View view){
-        switch (view.getId()){
-            case R.id.checkbox_9a:
-                doubleCheckedboxesThree();
-                break;
-
-            case R.id.checkbox_9b:
-                doubleCheckedboxesThree();
-                break;
-
-            case R.id.checkbox_9c:
-                doubleCheckedboxesThree();
-                break;
-
-            case R.id.checkbox_9d:
-                doubleCheckedboxesThree();
-                break;
-        }
-    }
-
-    private void doubleCheckedboxesThree(){
-        CheckBox thirdCB1 = findViewById(R.id.checkbox_9a);//wrong answer
-        CheckBox thirdCB2 = findViewById(R.id.checkbox_9b);//correct answer
-        CheckBox thirdCB3 = findViewById(R.id.checkbox_9c);//wrong answer
-        CheckBox thirdCB4 = findViewById(R.id.checkbox_9d);//correct answer
-
-        boolean correctAnswer = thirdCB2.isChecked() && thirdCB4.isChecked();
-        boolean wrongAnswer = thirdCB1.isChecked() || thirdCB3.isChecked();
-
-        if (correctAnswer && !wrongAnswer){
-            scoreNine =+ 1;
-        }else {
-            scoreNine = 0;
-        }
-    }
-    //End of Question Nine
 
 
     private void questionOne(){
@@ -248,22 +157,22 @@ public class EnglishActivity extends AppCompatActivity {
 
         if (buttonTwo.isChecked()){
             buttonTwo.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans1 = findViewById(R.id.answerMathematics1);
-            ans1.setText(getResources().getString(R.string.ansMathematics1));
+            TextView ans1 = findViewById(R.id.answerEnglish1);
+            ans1.setText(getResources().getString(R.string.ansEnglish1));
             ans1.setVisibility(View.VISIBLE);
             ans1.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
 
         }else if (buttonThree.isChecked()){
             buttonThree.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans1 = findViewById(R.id.answerMathematics1);
-            ans1.setText(getResources().getString(R.string.ansMathematics1));
+            TextView ans1 = findViewById(R.id.answerEnglish1);
+            ans1.setText(getResources().getString(R.string.ansEnglish1));
             ans1.setVisibility(View.VISIBLE);
             ans1.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
 
         }else if (buttonFour.isChecked()){
             buttonFour.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans1 = findViewById(R.id.answerMathematics1);
-            ans1.setText(getResources().getString(R.string.ansMathematics1));
+            TextView ans1 = findViewById(R.id.answerEnglish1);
+            ans1.setText(getResources().getString(R.string.ansEnglish1));
             ans1.setVisibility(View.VISIBLE);
             ans1.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
@@ -281,22 +190,22 @@ public class EnglishActivity extends AppCompatActivity {
 
         if (buttonTwo.isChecked()){
             buttonTwo.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans2 = findViewById(R.id.answerMathematics2);
-            ans2.setText(getResources().getString(R.string.ansMathematics2));
+            TextView ans2 = findViewById(R.id.answerEnglish2);
+            ans2.setText(getResources().getString(R.string.ansEnglish2));
             ans2.setVisibility(View.VISIBLE);
             ans2.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
         if (buttonThree.isChecked()){
             buttonThree.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans2 = findViewById(R.id.answerMathematics2);
-            ans2.setText(getResources().getString(R.string.ansMathematics2));
+            TextView ans2 = findViewById(R.id.answerEnglish2);
+            ans2.setText(getResources().getString(R.string.ansEnglish2));
             ans2.setVisibility(View.VISIBLE);
             ans2.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
         if (buttonFour.isChecked()){
             buttonFour.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans2 = findViewById(R.id.answerMathematics2);
-            ans2.setText(getResources().getString(R.string.ansMathematics2));
+            TextView ans2 = findViewById(R.id.answerEnglish2);
+            ans2.setText(getResources().getString(R.string.ansEnglish2));
             ans2.setVisibility(View.VISIBLE);
             ans2.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
@@ -314,22 +223,22 @@ public class EnglishActivity extends AppCompatActivity {
 
         if (buttonTwo.isChecked()){
             buttonTwo.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans3 = findViewById(R.id.answerMathematics3);
-            ans3.setText(getResources().getString(R.string.ansMathematics3));
+            TextView ans3 = findViewById(R.id.answerEnglish3);
+            ans3.setText(getResources().getString(R.string.ansEnglish3));
             ans3.setVisibility(View.VISIBLE);
             ans3.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
         if (buttonThree.isChecked()){
             buttonThree.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans3 = findViewById(R.id.answerMathematics3);
-            ans3.setText(getResources().getString(R.string.ansMathematics3));
+            TextView ans3 = findViewById(R.id.answerEnglish3);
+            ans3.setText(getResources().getString(R.string.ansEnglish3));
             ans3.setVisibility(View.VISIBLE);
             ans3.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
         if (buttonFour.isChecked()){
             buttonFour.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans3 = findViewById(R.id.answerMathematics3);
-            ans3.setText(getResources().getString(R.string.ansMathematics3));
+            TextView ans3 = findViewById(R.id.answerEnglish3);
+            ans3.setText(getResources().getString(R.string.ansEnglish3));
             ans3.setVisibility(View.VISIBLE);
             ans3.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
@@ -347,22 +256,22 @@ public class EnglishActivity extends AppCompatActivity {
 
         if (buttonTwo.isChecked()){
             buttonTwo.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans4 = findViewById(R.id.answerMathematics4);
-            ans4.setText(getResources().getString(R.string.ansMathematics4));
+            TextView ans4 = findViewById(R.id.answerEnglish4);
+            ans4.setText(getResources().getString(R.string.ansEnglish4));
             ans4.setVisibility(View.VISIBLE);
             ans4.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
         if (buttonThree.isChecked()){
             buttonThree.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans4 = findViewById(R.id.answerMathematics4);
-            ans4.setText(getResources().getString(R.string.ansMathematics4));
+            TextView ans4 = findViewById(R.id.answerEnglish4);
+            ans4.setText(getResources().getString(R.string.ansEnglish4));
             ans4.setVisibility(View.VISIBLE);
             ans4.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
         if (buttonFour.isChecked()){
             buttonFour.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans4 = findViewById(R.id.answerMathematics4);
-            ans4.setText(getResources().getString(R.string.ansMathematics4));
+            TextView ans4 = findViewById(R.id.answerEnglish4);
+            ans4.setText(getResources().getString(R.string.ansEnglish4));
             ans4.setVisibility(View.VISIBLE);
             ans4.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
@@ -372,59 +281,35 @@ public class EnglishActivity extends AppCompatActivity {
         buttonFour.setEnabled(false);
     }
 
+
+
     private void questionFive(){
-        CheckBox buttonOne = findViewById(R.id.checkbox_5a);
-        CheckBox buttonTwo = findViewById(R.id.checkbox_5b);
-        CheckBox buttonThree = findViewById(R.id.checkbox_5c);
-        CheckBox buttonFour = findViewById(R.id.checkbox_5d);
+        RadioButton buttonOne = findViewById(R.id.button_5a);//the answer
+        RadioButton buttonTwo = findViewById(R.id.button_5b);
+        RadioButton buttonThree = findViewById(R.id.button_5c);
+        RadioButton buttonFour = findViewById(R.id.button_5d);
 
-        boolean wrongOne = buttonOne.isChecked();
-        boolean wrongTwo = buttonThree.isChecked();
-
-        if (wrongOne) {
-            buttonThree.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans5 = findViewById(R.id.answerMathematics5);
-            ans5.setText(getResources().getString(R.string.ansMathematics5));
-            ans5.setVisibility(View.VISIBLE);
-            ans5.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
+        if (buttonOne.isChecked()){
+            buttonOne.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
+            TextView ans4 = findViewById(R.id.answerEnglish4);
+            ans4.setText(getResources().getString(R.string.ansEnglish4));
+            ans4.setVisibility(View.VISIBLE);
+            ans4.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
-
-        if (wrongTwo) {
+        if (buttonTwo.isChecked()){
+            buttonTwo.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
+            TextView ans4 = findViewById(R.id.answerEnglish4);
+            ans4.setText(getResources().getString(R.string.ansEnglish4));
+            ans4.setVisibility(View.VISIBLE);
+            ans4.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
+        }
+        if (buttonFour.isChecked()){
             buttonFour.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans5 = findViewById(R.id.answerMathematics5);
-            ans5.setText(getResources().getString(R.string.ansMathematics5));
-            ans5.setVisibility(View.VISIBLE);
-            ans5.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
+            TextView ans4 = findViewById(R.id.answerEnglish4);
+            ans4.setText(getResources().getString(R.string.ansEnglish4));
+            ans4.setVisibility(View.VISIBLE);
+            ans4.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
         }
-
-        boolean a = buttonTwo.isChecked() && buttonFour.isChecked();
-        boolean b = a && wrongOne;
-        boolean c = a && wrongTwo;
-
-        boolean x = buttonTwo.isChecked() && buttonThree.isChecked() && buttonFour.isChecked();
-        boolean y = buttonOne.isChecked();
-        boolean m = buttonOne.isChecked() && buttonThree.isChecked() && buttonFour.isChecked();
-        boolean n = buttonTwo.isChecked();
-
-        if (b || c){
-            TextView ans5 = findViewById(R.id.answerMathematics5);
-            ans5.setText(getResources().getString(R.string.ansMathematics5));
-            ans5.setVisibility(View.VISIBLE);
-            ans5.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-
-        }else if (!x && y){
-            TextView ans5 = findViewById(R.id.answerMathematics5);
-            ans5.setText(getResources().getString(R.string.ansMathematics5));
-            ans5.setVisibility(View.VISIBLE);
-            ans5.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-
-        }else if (!m && n){
-            TextView ans5 = findViewById(R.id.answerMathematics5);
-            ans5.setText(getResources().getString(R.string.ansMathematics5));
-            ans5.setVisibility(View.VISIBLE);
-            ans5.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-        }
-
         buttonOne.setEnabled(false);
         buttonTwo.setEnabled(false);
         buttonThree.setEnabled(false);
@@ -433,176 +318,6 @@ public class EnglishActivity extends AppCompatActivity {
 
 
 
-    private void questionSix(){
-        TextInputEditText textAnswer = findViewById(R.id.editText);
-        String myAnswer = textAnswer.getText().toString();
-        String evaporation = "Evaporation";
-
-        if (myAnswer.trim().equalsIgnoreCase(evaporation)){
-            scoreSix =+ 1;
-        }else {
-            TextView ans6 = findViewById(R.id.answerMathematics6);
-            ans6.setText(getResources().getString(R.string.ansMathematics6));
-            ans6.setVisibility(View.VISIBLE);
-            ans6.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-        }
-        textAnswer.setEnabled(false);
-    }
-
-
-
-    private void questionSeven(){
-        CheckBox buttonOne = findViewById(R.id.checkbox_7a);
-        CheckBox buttonTwo = findViewById(R.id.checkbox_7b);
-        CheckBox buttonThree = findViewById(R.id.checkbox_7c);
-        CheckBox buttonFour = findViewById(R.id.checkbox_7d);
-
-        boolean wrongOne = buttonOne.isChecked();
-        boolean wrongTwo = buttonThree.isChecked();
-
-        if (wrongOne) {
-            buttonThree.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans7 = findViewById(R.id.answerMathematics7);
-            ans7.setText(getResources().getString(R.string.ansMathematics7));
-            ans7.setVisibility(View.VISIBLE);
-            ans7.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-        }
-
-        if (wrongTwo) {
-            buttonFour.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans7 = findViewById(R.id.answerMathematics7);
-            ans7.setText(getResources().getString(R.string.ansMathematics7));
-            ans7.setVisibility(View.VISIBLE);
-            ans7.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-        }
-
-        boolean a = buttonTwo.isChecked() && buttonFour.isChecked();
-        boolean b = a && wrongOne;
-        boolean c = a && wrongTwo;
-
-        boolean x = buttonTwo.isChecked() && buttonThree.isChecked() && buttonFour.isChecked();
-        boolean y = buttonOne.isChecked();
-        boolean m = buttonOne.isChecked() && buttonThree.isChecked() && buttonFour.isChecked();
-        boolean n = buttonTwo.isChecked();
-
-        if (b || c){
-            TextView ans7 = findViewById(R.id.answerMathematics7);
-            ans7.setText(getResources().getString(R.string.ansMathematics7));
-            ans7.setVisibility(View.VISIBLE);
-            ans7.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-
-        }else if (!x && y){
-            TextView ans7 = findViewById(R.id.answerMathematics7);
-            ans7.setText(getResources().getString(R.string.ansMathematics7));
-            ans7.setVisibility(View.VISIBLE);
-            ans7.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-
-        }else if (!m && n){
-            TextView ans7 = findViewById(R.id.answerMathematics7);
-            ans7.setText(getResources().getString(R.string.ansMathematics7));
-            ans7.setVisibility(View.VISIBLE);
-            ans7.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-        }
-
-        buttonOne.setEnabled(false);
-        buttonTwo.setEnabled(false);
-        buttonThree.setEnabled(false);
-        buttonFour.setEnabled(false);
-    }
-
-
-    private void questionEight(){
-        TextInputEditText textAnswerTwo = findViewById(R.id.editTextTwo);
-        String myAnswerTwo = textAnswerTwo.getText().toString();
-        String element = "Element";
-
-        if (myAnswerTwo.trim().equalsIgnoreCase(element)){
-            scoreEight =+ 1;
-        }else {
-            TextView ans8 = findViewById(R.id.answerMathematics8);
-            ans8.setText(getResources().getString(R.string.ansMathematics8));
-            ans8.setVisibility(View.VISIBLE);
-            ans8.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-        }
-        textAnswerTwo.setEnabled(false);
-    }
-
-
-
-    private void questionNine(){
-        CheckBox buttonOne = findViewById(R.id.checkbox_9a);
-        CheckBox buttonTwo = findViewById(R.id.checkbox_9b);
-        CheckBox buttonThree = findViewById(R.id.checkbox_9c);
-        CheckBox buttonFour = findViewById(R.id.checkbox_9d);
-
-        boolean wrongOne = buttonOne.isChecked();
-        boolean wrongTwo = buttonThree.isChecked();
-
-        if (wrongOne) {
-            buttonThree.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans9 = findViewById(R.id.answerMathematics9);
-            ans9.setText(getResources().getString(R.string.ansMathematics9));
-            ans9.setVisibility(View.VISIBLE);
-            ans9.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-        }
-
-        if (wrongTwo) {
-            buttonFour.setBackground(getResources().getDrawable(R.drawable.radio_buttons));
-            TextView ans9 = findViewById(R.id.answerMathematics9);
-            ans9.setText(getResources().getString(R.string.ansMathematics9));
-            ans9.setVisibility(View.VISIBLE);
-            ans9.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-        }
-
-        boolean a = buttonTwo.isChecked() && buttonFour.isChecked();
-        boolean b = a && wrongOne;
-        boolean c = a && wrongTwo;
-
-        boolean x = buttonTwo.isChecked() && buttonThree.isChecked() && buttonFour.isChecked();
-        boolean y = buttonOne.isChecked();
-        boolean m = buttonOne.isChecked() && buttonThree.isChecked() && buttonFour.isChecked();
-        boolean n = buttonTwo.isChecked();
-
-        if (b || c){
-            TextView ans9 = findViewById(R.id.answerMathematics9);
-            ans9.setText(getResources().getString(R.string.ansMathematics9));
-            ans9.setVisibility(View.VISIBLE);
-            ans9.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-
-        }else if (!x && y){
-            TextView ans9 = findViewById(R.id.answerMathematics9);
-            ans9.setText(getResources().getString(R.string.ansMathematics9));
-            ans9.setVisibility(View.VISIBLE);
-            ans9.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-
-        }else if (!m && n){
-            TextView ans9 = findViewById(R.id.answerMathematics9);
-            ans9.setText(getResources().getString(R.string.ansMathematics9));
-            ans9.setVisibility(View.VISIBLE);
-            ans9.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-        }
-
-        buttonOne.setEnabled(false);
-        buttonTwo.setEnabled(false);
-        buttonThree.setEnabled(false);
-        buttonFour.setEnabled(false);
-    }
-
-    private void questionTen(){
-        TextInputEditText textAnswerThree = findViewById(R.id.editTextThree);
-        String myAnswerThree = textAnswerThree.getText().toString();
-        String acid = "Acid";
-
-        if (myAnswerThree.trim().equalsIgnoreCase(acid)){
-            scoreTen =+ 1;
-        }else {
-            TextView ans10 = findViewById(R.id.answerMathematics10);
-            ans10.setText(getResources().getString(R.string.ansMathematics10));
-            ans10.setVisibility(View.VISIBLE);
-            ans10.setBackground(getResources().getDrawable(R.drawable.hidden_textview));
-        }
-        textAnswerThree.setEnabled(false);
-    }
 
     public void submitButton(View view){
         //errors
@@ -610,31 +325,7 @@ public class EnglishActivity extends AppCompatActivity {
         RadioGroup rg2 = findViewById(R.id.rg2);
         RadioGroup rg3 = findViewById(R.id.rg3);
         RadioGroup rg4 = findViewById(R.id.rg4);
-
-        TextInputEditText textAnswer = findViewById(R.id.editText);
-
-        TextInputEditText textAnswerTwo = findViewById(R.id.editTextTwo);
-
-        TextInputEditText textAnswerThree = findViewById(R.id.editTextThree);
-
-        CheckBox CB1 = findViewById(R.id.checkbox_5a);
-        CheckBox CB2 = findViewById(R.id.checkbox_5b);
-        CheckBox CB3 = findViewById(R.id.checkbox_5c);
-        CheckBox CB4 = findViewById(R.id.checkbox_5d);
-        boolean checked = CB1.isChecked() || CB2.isChecked() || CB3.isChecked() || CB4.isChecked(); //at least one checkbox is checked
-
-        CheckBox secondCB1 = findViewById(R.id.checkbox_7a);
-        CheckBox secondCB2 = findViewById(R.id.checkbox_7b);
-        CheckBox secondCB3 = findViewById(R.id.checkbox_7c);
-        CheckBox secondCB4 = findViewById(R.id.checkbox_7d);
-        boolean checkedTwo = secondCB1.isChecked() || secondCB2.isChecked() || secondCB3.isChecked() || secondCB4.isChecked();
-
-        CheckBox thirdCB1 = findViewById(R.id.checkbox_9a);
-        CheckBox thirdCB2 = findViewById(R.id.checkbox_9b);
-        CheckBox thirdCB3 = findViewById(R.id.checkbox_9c);
-        CheckBox thirdCB4 = findViewById(R.id.checkbox_9d);
-        boolean checkedThree = thirdCB1.isChecked() || thirdCB2.isChecked() || thirdCB3.isChecked() || thirdCB4.isChecked();
-
+        RadioGroup rg5 = findViewById(R.id.rg5);
 
         if(rg1.getCheckedRadioButtonId() == -1){
             //if no RadioButton is checked
@@ -649,38 +340,18 @@ public class EnglishActivity extends AppCompatActivity {
         }else if (rg4.getCheckedRadioButtonId() == -1) {
             Toast.makeText(this, "Question 4 is not answered", Toast.LENGTH_SHORT).show();
 
-        }else if (!checked){
-            Toast.makeText(this, "Question 5 is not answered", Toast.LENGTH_SHORT).show();
-
-        } else if (textAnswer.length() == 0){
-            Toast.makeText(this, "Question 6 is not answered", Toast.LENGTH_SHORT).show();
-
-        }else if (!checkedTwo){
-            Toast.makeText(this, "Question 7 is not answered", Toast.LENGTH_SHORT).show();
-
-        } else if (textAnswerTwo.length() == 0){
-            Toast.makeText(this, "Question 8 is not answered", Toast.LENGTH_SHORT).show();
-
-        }else if (!checkedThree){
-            Toast.makeText(this, "Question 9 is not answered", Toast.LENGTH_SHORT).show();
-
-        } else if (textAnswerThree.length() == 0){
-            Toast.makeText(this, "Question 10 is not answered", Toast.LENGTH_SHORT).show();
-
-        } else {
-            //if at least one RadioButton & checkbox is checked and the editText not empty
+        } else if (rg4.getCheckedRadioButtonId() == -1){
+            Toast.makeText(this, "Question % is not answered", Toast.LENGTH_SHORT).show();
+        }else {
+            //if at least one RadioButton is not empty
             questionOne();
             questionTwo();
             questionThree();
             questionFour();
             questionFive();
-            questionSix();
-            questionSeven();
-            questionEight();
-            questionNine();
-            questionTen();
 
-            int totalScore = score + scoreTwo + scoreThree + scoreFour + scoreFive + scoreSix + scoreSeven +scoreEight + scoreNine + scoreTen;
+
+            int totalScore = score + scoreTwo + scoreThree + scoreFour + scoreFive;
             // Toast messages after taking the quizzes.
             if (totalScore <= 4){
                 Toast.makeText(this, "Below Average. Try Harder Next Time!", Toast.LENGTH_SHORT).show();
@@ -706,7 +377,7 @@ public class EnglishActivity extends AppCompatActivity {
     }
 
     public void nextPage(View view){
-        startActivity(new Intent(this, PhysicsActivity.class));
+        startActivity(new Intent(this, ChemistryActivity.class));
     }
     public void previousPage(View view) {
         startActivity(new Intent(this, MathematicsActivity.class));

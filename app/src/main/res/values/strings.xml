@@ -245,8 +245,8 @@
 
 
 
-    <!--Chemistry starts here-->
-    <string name="titleEnglish">Chemistry Quiz</string>
+    <!--English starts here-->
+    <string name="englishTitle">English Quiz</string>
 
 
     <string name="comPrehensionPassage">Read the Passage below and answer the questions that follows \n \n \n
@@ -280,44 +280,43 @@
     </string>
 
     <string name="questionEnglish1">1. This passage says that early instruments for measuring earthquakes were </string>
-    <string name="answerEnglish1a">expensive</string>
-    <string name="answerEnglish1b">not sturdy</string>
-    <string name="answerEnglish1c">not sensitive enough ( c)</string>
-    <string name="answerEnglish1d">faulty in design</string>
+    <string name="answerEnglish1a">A. Expensive</string>
+    <string name="answerEnglish1b">B. Not sturdy</string>
+    <string name="answerEnglish1c">C. Not sensitive enough </string>
+    <string name="answerEnglish1d">D. Faulty in design</string>
 
     <string name="questionEnglish2">2. Why was it necessary to invent instruments to observe an earthquake ? </string>
-    <string name="answerEnglish2a"> Because an earthquake comes like a thief in the night ( c)</string>
-    <string name="answerEnglish2b">To make people alert about earthquake during their conscious as well as unconscious hours</string>
-    <string name="answerEnglish2c">To experiment with the control of man over nature</string>
-    <string name="answerEnglish2d">To prove that we are technically advanced</string>
+    <string name="answerEnglish2a">A. Because an earthquake comes like a thief in the night </string>
+    <string name="answerEnglish2b">B. To make people alert about earthquake during their conscious as well as unconscious hours</string>
+    <string name="answerEnglish2c">C. To experiment with the control of man over nature</string>
+    <string name="answerEnglish2d">D. To prove that we are technically advanced</string>
 
     <string name="questionEnglish3">3. A simple device which consisted of
         rods that stood up on end like ninepins was
         replaced by a more sophisticated one because it failed</string>
-    <string name="answerEnglish3a">to measure a severe earthquake</string>
-    <string name="answerEnglish3b">to record the facts with a pen on paper ( c)</string>
-    <string name="answerEnglish3c">to measure a gentle earthquake </string>
-    <string name="answerEnglish3d">to record the direction of the earthquake</string>
+    <string name="answerEnglish3a">A. To measure a severe earthquake</string>
+    <string name="answerEnglish3b">B. To record the facts with a pen on paper </string>
+    <string name="answerEnglish3c">C. To measure a gentle earthquake </string>
+    <string name="answerEnglish3d">D. To record the direction of the earthquake</string>
 
     <string name="questionEnglish4">4. The everyday observation referred to in the passage relates to </string>
-    <string name="answerEnglish4a">the sudden start of a bus</string>
-    <string name="answerEnglish4b">the tendency of a standing person to fall when a bus or train moves suddenly ( c)</string>
-    <string name="answerEnglish4c">a moving bus or train</string>
-    <string name="answerEnglish4d">people standing in a bus or train</string>
+    <string name="answerEnglish4a">A. The sudden start of a bus</string>
+    <string name="answerEnglish4b">B. The tendency of a standing person to fall when a bus or train moves suddenly </string>
+    <string name="answerEnglish4c">C. A moving bus or train</string>
+    <string name="answerEnglish4d">D. People standing in a bus or train</string>
 
-    <string name="questionEnglish5">5.The early seismometers adoed the idea that in order
-         to record the earthquake, it is</string>
-    <string name="answerEnglish5a">both pen and paper that should move</string>
-    <string name="answerEnglish5b">the pen that should stay still and the paper should move</string>
-    <string name="answerEnglish5c">the pen that should move just as it moves when we write on paper ( c)</string>
-    <string name="answerEnglish5d">neither pen nor paper that should move</string>
+    <string name="questionEnglish5">5.The early seismometers added the idea that in order to record the earthquake, it is</string>
+    <string name="answerEnglish5a">A. Both pen and paper that should move</string>
+    <string name="answerEnglish5b">B. The pen that should stay still and the paper should move</string>
+    <string name="answerEnglish5c">C. The pen that should move just as it moves when we write on paper </string>
+    <string name="answerEnglish5d">D. Neither pen nor paper that should move</string>
 
     <!--Answers Text Here-->
-    <string name="ansEnglish1">The correct answer is 90</string>
-    <string name="ansEnglish2">The correct answer is 6.4%</string>
-    <string name="ansEnglish3">The correct answer is 0.4</string>
-    <string name="ansEnglish4">The correct answer is 2100</string>
-    <string name="ansEnglish5">The correct answers are 180 and 360 only </string>
+    <string name="ansEnglish1">The correct answer is C</string>
+    <string name="ansEnglish2">The correct answer is A</string>
+    <string name="ansEnglish3">The correct answer is B</string>
+    <string name="ansEnglish4">The correct answer is B</string>
+    <string name="ansEnglish5">The correct answer is C</string>
     <!--End of english questions here-->
 
 

@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:text="@string/titleEnglish"
+            android:text="@string/englishTitle"
             android:textSize="45sp"/>
 
         <View
@@ -35,7 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="@string/comPrehensionPassage"/>
+            android:text="@string/comPrehensionPassage"
+            android:textStyle="bold"/>
 
         <!--question 1-->
         <android.support.v7.widget.CardView
@@ -44,6 +45,7 @@
             android:layout_margin="10dp"
             app:cardCornerRadius="10dp"
             app:cardElevation="4dp">
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,7 +56,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/questionMathematics1"
+                    android:text="@string/questionEnglish1"
                     android:textColor="@color/textOne"
                     android:textSize="16sp" />
 
@@ -62,7 +64,7 @@
                     android:id="@+id/rg1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <RadioButton
                         android:id="@+id/button_1a"
@@ -70,7 +72,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:onClick="onRadioButtonClicked"
-                        android:text="@string/answerMathematics1a"
+                        android:text="@string/answerEnglish1a"
                         android:textColor="@color/textTwo" />
 
                     <RadioButton
@@ -79,7 +81,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:onClick="onRadioButtonClicked"
-                        android:text="@string/answerMathematics1b"
+                        android:text="@string/answerEnglish1b"
                         android:textColor="@color/textTwo" />
 
                     <RadioButton
@@ -88,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:onClick="onRadioButtonClicked"
-                        android:text="@string/answerMathematics1c"
+                        android:text="@string/answerEnglish1c"
                         android:textColor="@color/textTwo" />
 
                     <RadioButton
@@ -97,12 +99,12 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:onClick="onRadioButtonClicked"
-                        android:text="@string/answerMathematics1d"
+                        android:text="@string/answerEnglish1d"
                         android:textColor="@color/textTwo" />
                 </RadioGroup>
 
                 <TextView
-                    android:id="@+id/answerMathematics1"
+                    android:id="@+id/answerEnglish1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -137,7 +139,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/questionMathematics2"
+                    android:text="@string/questionEnglish2"
                     android:textColor="@color/textOne"
                     android:textSize="16sp" />
 
@@ -152,7 +154,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:onClick="onRadioButtonClicked"
-                        android:text="@string/answerMathematics2a"
+                        android:text="@string/answerEnglish2a"
                         android:textColor="@color/textTwo" />
 
                     <RadioButton
@@ -162,7 +164,7 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics2b"
+                        android:text="@string/answerEnglish2b"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
 
@@ -173,7 +175,7 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics2c"
+                        android:text="@string/answerEnglish2c"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
 
@@ -184,13 +186,13 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics2d"
+                        android:text="@string/answerEnglish2d"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
                 </RadioGroup>
 
                 <TextView
-                    android:id="@+id/answerMathematics2"
+                    android:id="@+id/answerEnglish2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -224,7 +226,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/questionMathematics3"
+                    android:text="@string/questionEnglish3"
                     android:textColor="@color/textOne"
                     android:textSize="16sp" />
 
@@ -241,7 +243,7 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics3a"
+                        android:text="@string/answerEnglish3a"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
 
@@ -252,7 +254,7 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics3b"
+                        android:text="@string/answerEnglish3b"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
 
@@ -263,7 +265,7 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics3c"
+                        android:text="@string/answerEnglish3c"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
 
@@ -274,13 +276,13 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics3d"
+                        android:text="@string/answerEnglish3d"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
                 </RadioGroup>
 
                 <TextView
-                    android:id="@+id/answerMathematics3"
+                    android:id="@+id/answerEnglish3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -315,7 +317,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/questionMathematics4"
+                    android:text="@string/questionEnglish4"
                     android:textColor="@color/textOne"
                     android:textSize="16sp" />
 
@@ -332,7 +334,7 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics4a"
+                        android:text="@string/answerEnglish4a"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
 
@@ -344,7 +346,7 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics4b"
+                        android:text="@string/answerEnglish4b"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
 
@@ -356,7 +358,7 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics4c"
+                        android:text="@string/answerEnglish4c"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
 
@@ -368,13 +370,13 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics4d"
+                        android:text="@string/answerEnglish4d"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
                 </RadioGroup>
 
                 <TextView
-                    android:id="@+id/answerMathematics4"
+                    android:id="@+id/answerEnglish4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -412,7 +414,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/questionMathematics4"
+                    android:text="@string/questionEnglish5"
                     android:textColor="@color/textOne"
                     android:textSize="16sp" />
 
@@ -429,7 +431,7 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics4a"
+                        android:text="@string/answerEnglish4a"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
 
@@ -441,7 +443,7 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics4b"
+                        android:text="@string/answerEnglish4b"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
 
@@ -453,7 +455,7 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics4c"
+                        android:text="@string/answerEnglish4c"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
 
@@ -465,13 +467,13 @@
                         android:onClick="onRadioButtonClicked"
                         android:paddingEnd="10dp"
                         android:paddingRight="10dp"
-                        android:text="@string/answerMathematics4d"
+                        android:text="@string/answerEnglish4d"
                         android:textColor="@color/textTwo"
                         tools:ignore="RtlSymmetry" />
                 </RadioGroup>
 
                 <TextView
-                    android:id="@+id/answerMathematics5"
+                    android:id="@+id/answerEnglish5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
