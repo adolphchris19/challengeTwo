@@ -340,9 +340,10 @@ public class EnglishActivity extends AppCompatActivity {
         }else if (rg4.getCheckedRadioButtonId() == -1) {
             Toast.makeText(this, "Question 4 is not answered", Toast.LENGTH_SHORT).show();
 
-        } else if (rg4.getCheckedRadioButtonId() == -1){
+        } else if (rg5.getCheckedRadioButtonId() == -1){
             Toast.makeText(this, "Question % is not answered", Toast.LENGTH_SHORT).show();
         }else {
+
             //if at least one RadioButton is not empty
             questionOne();
             questionTwo();
@@ -365,6 +366,8 @@ public class EnglishActivity extends AppCompatActivity {
             TextView results = findViewById(R.id.results);
             results.setText(getResources().getString(R.string.results, totalScore));
             results.setVisibility(View.VISIBLE);
+            Toast.makeText(this, "Your Total Score is: " + totalScore, Toast.LENGTH_SHORT).show();
+
 
             // Status Buttons Buttons after the submit button is clicked.
             Button next = findViewById(R.id.next_button);

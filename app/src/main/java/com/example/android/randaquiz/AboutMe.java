@@ -10,4 +10,8 @@ public class AboutMe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_me);
     }
+     public void finish(android.view.View view) {
+        startActivity(new android.content.Intent(this, MainActivity.class));
+    }
+
 }
