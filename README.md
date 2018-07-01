@@ -72,7 +72,7 @@ The chemistry, physics and mathematics fields contains Ten(10) questions each, w
 
 # LINK TO APPLICATION 
 
-- https://drive.google.com/drive/folders/1kWYlbTlIJaMSoau64fEv5vk6PDnLnluh
+- https://drive.google.com/drive/folders/1kWYlbTlIJaMSoau64fEv5vk6PDnLnluh?usp=sharing
 
 
 ## Author of This Project.
