@@ -27,12 +27,11 @@
             android:label="@string/category_english" />
         <activity
             android:name=".MathematicsActivity"
-            android:label="@string/category_mathematics">
-
-        </activity>
-        <activity android:name=".AboutMe" android:label="About Me">
-
-        </activity>
+            android:label="@string/category_mathematics"></activity>
+        <activity
+            android:name=".AboutMe"
+            android:label="About Me"></activity>
+        <activity android:name=".firstScreen"></activity>
     </application>
 
 </manifest>

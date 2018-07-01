@@ -1,75 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="30dp"
+    android:layout_gravity="center"
     android:background="@color/tan_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp"
     tools:context="com.example.android.randaquiz.MainActivity">
 
-
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="40dp">
-
-        <!--Put the four images here-->
-
-    </RelativeLayout>
-
-
-
-    <!-- verification -->
-
-
-
-
-    <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="30dp"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:background="@color/tan_background"
-        android:orientation="vertical"
-        tools:context="com.example.android.randaquiz.MainActivity">
+        android:orientation="vertical">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/second" />
+
         <TextView
-            android:id="@+id/mathematics"
-            style="@style/CategoryStyle"
-            android:layout_margin="20dp"
-            android:textAlignment="center"
-            android:background="@color/category_mathematics"
-            android:text="@string/category_mathematics" />
-        <TextView
-            android:id="@+id/english"
-            style="@style/CategoryStyle"
-            android:layout_margin="20dp"
-            android:textAlignment="center"
-            android:background="@color/category_english"
-            android:text="@string/category_english" />
-        <TextView
-            android:id="@+id/chemistry"
-            style="@style/CategoryStyle"
-            android:layout_margin="20dp"
-            android:textAlignment="center"
-            android:background="@color/category_chemistry"
-            android:text="@string/category_chemistry" />
-        <TextView
-            android:id="@+id/physics"
-            style="@style/CategoryStyle"
-            android:layout_margin="20dp"
-            android:textAlignment="center"
-            android:background="@color/category_physics"
-            android:text="@string/category_physics" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/loading"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+
+
     </LinearLayout>
 
-
-
-    <!-- verification -->
 
 </ScrollView>

@@ -5,13 +5,13 @@
 
     <string name="heading">Welcome</string>
 
-    <string name="category_chemistry">Chemistry</string>
+    <string name="category_chemistry">Chem</string>
 
     <string name="category_physics">Physics</string>
 
-    <string name="category_mathematics">Mathematics</string>
+    <string name="category_mathematics">Maths</string>
 
-    <string name="category_english">English Language</string>
+    <string name="category_english">English</string>
 
     <!-- All the texts used in the about me Page-->
     <string name="myself">"@"adolphchris19</string>
@@ -27,6 +27,8 @@
     <string name="country">Nigerian</string>
     <string name="finish">Finish</string>
     <!--End of the texts used-->
+
+    <string name="loading"> Please wait, while we set up your environment</string>
 
     <!--Chemistry starts here-->
     <string name="title">Chemistry Quiz</string>
@@ -92,7 +94,6 @@
     <string name="ans9">The correct answers are Nuclear Fission and Nuclear Fusion only </string>
     <string name="ans10"> The correct answer is Acid </string>
     <!--Chemistry Ends Here-->
-
 
 
     <!--Physics Questions Start here-->
@@ -244,7 +245,6 @@
     <!--Mathematics Question ends here-->
 
 
-
     <!--English starts here-->
     <string name="englishTitle">English Quiz</string>
 
@@ -326,5 +326,4 @@
     <string name="previous">Previous</string>
     <string name="results">Your Total score is %1$d</string>
 
-</resources>
-<!--String Resources Ends-->
+</resources><!--String Resources Ends-->

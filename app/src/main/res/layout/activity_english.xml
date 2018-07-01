@@ -539,6 +539,7 @@
                 android:layout_weight="1"
                 android:onClick="previousPage"
                 android:text="@string/previous"
+                android:textColor="@color/white"
                 android:visibility="gone"
                 android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
@@ -552,6 +553,7 @@
                 android:onClick="nextPage"
                 android:text="@string/next"
                 android:visibility="gone"
+                android:textColor="@color/white"
                 android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
                 android:background="@drawable/next"/>

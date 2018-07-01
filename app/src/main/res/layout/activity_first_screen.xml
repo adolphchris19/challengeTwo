@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:layout_marginTop="120dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/tan_background"
+    tools:context="com.example.android.randaquiz.MainActivity">
+
+    <TextView
+        android:id="@+id/mathematics"
+        style="@style/CategoryStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="55dp"
+        android:padding="25dp"
+        android:textAlignment="center"
+        android:background="@color/category_mathematics"
+        android:text="@string/category_mathematics" />
+
+    <TextView
+        android:id="@+id/english"
+        style="@style/CategoryStyle"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@id/mathematics"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="25dp"
+        android:layout_marginStart="30dp"
+        android:textAlignment="center"
+        android:background="@color/category_english"
+        android:text="@string/category_english" />
+
+    <TextView
+        android:id="@+id/chemistry"
+        style="@style/CategoryStyle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentBottom="true"
+        android:padding="25dp"
+        android:layout_marginBottom="200dp"
+        android:textAlignment="center"
+        android:background="@color/category_chemistry"
+        android:text="@string/category_chemistry" />
+
+
+    <TextView
+        android:id="@+id/physics"
+        style="@style/CategoryStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/chemistry"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="25dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="200dp"
+        android:textAlignment="center"
+        android:background="@color/category_physics"
+        android:text="@string/category_physics" />
+
+
+</RelativeLayout>
