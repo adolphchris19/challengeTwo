@@ -354,9 +354,9 @@ public class EnglishActivity extends AppCompatActivity {
 
             int totalScore = score + scoreTwo + scoreThree + scoreFour + scoreFive;
             // Toast messages after taking the quizzes.
-            if (totalScore <= 4){
+            if (totalScore <= 2){
                 Toast.makeText(this, "Below Average. Try Harder Next Time!", Toast.LENGTH_SHORT).show();
-            }else if (totalScore == 5 || totalScore == 6 || totalScore == 7){
+            }else if (totalScore == 3 ){
                 Toast.makeText(this, "Good Result, you can still do better!", Toast.LENGTH_SHORT).show();
             }else {
                 Toast.makeText(this, "Excellent result, do not relent!", Toast.LENGTH_SHORT).show();
