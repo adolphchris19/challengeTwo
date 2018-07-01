@@ -101,28 +101,28 @@
     <string name="titlePhysics">Physics Quiz</string>
 
     <string name="questionPhysics1">1.Electric resistance is typically measured in what units??</string>
-    <string name="answerPhysics1a">45</string>
-    <string name="answerPhysics1b">209</string>
+    <string name="answerPhysics1a">Power</string>
+    <string name="answerPhysics1b">Watts</string>
     <string name="answerPhysics1c">Ohms</string>
-    <string name="answerPhysics1d">127</string>
+    <string name="answerPhysics1d">Gram</string>
 
     <string name="questionPhysics2">2.What scientist is well known for his theory of relativity??</string>
     <string name="answerPhysics2a">Albert Einstein</string>
-    <string name="answerPhysics2b">Ethanol</string>
-    <string name="answerPhysics2c">Ethyl</string>
-    <string name="answerPhysics2d">formic acid</string>
+    <string name="answerPhysics2b">Charles Darwin</string>
+    <string name="answerPhysics2c">AdolPh Chris</string>
+    <string name="answerPhysics2d">Ronaldo</string>
 
     <string name="questionPhysics3">3.Electric power is typically measured in what units?</string>
-    <string name="answerPhysics3a">Burning</string>
+    <string name="answerPhysics3a">kilogram</string>
     <string name="answerPhysics3b">watts</string>
-    <string name="answerPhysics3c">Oxidation</string>
-    <string name="answerPhysics3d">Redox Reaction</string>
+    <string name="answerPhysics3c">Ohms</string>
+    <string name="answerPhysics3d">M/s</string>
 
     <string name="questionPhysics4">4.A magnifying glass is what type of lens?.</string>
     <string name="answerPhysics4a">concave</string>
     <string name="answerPhysics4b">convex</string>
-    <string name="answerPhysics4c">Chlorine</string>
-    <string name="answerPhysics4d">Sodium Carbonate</string>
+    <string name="answerPhysics4c">glass</string>
+    <string name="answerPhysics4d">mirror</string>
 
     <string name="questionPhysics5">5.From the oPtions below, choose two Particles of a radioactive emissions?</string>
     <string name="answerPhysics5a">Omega Particles </string>

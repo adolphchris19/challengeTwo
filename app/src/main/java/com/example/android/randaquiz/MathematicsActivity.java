@@ -707,10 +707,10 @@ public class MathematicsActivity extends AppCompatActivity {
     }
 
     public void nextPage(View view){
-        startActivity(new Intent(this, PhysicsActivity.class));
+        startActivity(new Intent(this, EnglishActivity.class));
     }
     public void previousPage(View view) {
-        startActivity(new Intent(this, EnglishActivity.class));
+        startActivity(new Intent(this, PhysicsActivity.class));
     }
 
 }//end of public class
