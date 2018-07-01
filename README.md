@@ -24,6 +24,7 @@ The chemistry, physics and mathematics fields contains Ten(10) questions each, w
 - ``` testImplementation 'junit:junit:4.12'```
 - ```androidTestImplementation 'com.android.support.test:runner:1.0.2'```
 - ```androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'```
+- ```implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.4'```
 
 ### 2. You need to have the following sdk values.
 
@@ -46,14 +47,29 @@ The chemistry, physics and mathematics fields contains Ten(10) questions each, w
 
 ![icon](https://user-images.githubusercontent.com/39165002/42107801-85a9130c-7b8d-11e8-8083-2a8a03c62a14.png)
 
+- ### FIRST ACTIVITY
 
-- ### First Activity
+![img-20180701-wa0008](https://user-images.githubusercontent.com/39165002/42137658-31221fc4-7d25-11e8-87f6-f32e1bf68ef6.jpg)
 
-![screenshot_2018-06-29-19-24-09](https://user-images.githubusercontent.com/39165002/42108398-38f045f6-7b8f-11e8-8341-ec26c78eb09e.png)
 
-- ### Last Activity 
+- ### SECOND ACTIVITY 
 
-![screenshot_2018-06-29-19-27-49](https://user-images.githubusercontent.com/39165002/42108531-b17eddc0-7b8f-11e8-967b-639b0f49c4ba.png)
+![img-20180701-wa0002](https://user-images.githubusercontent.com/39165002/42137677-cecf4ba2-7d25-11e8-9774-475ad14b00db.jpg)
+
+
+- ## OTHERS
+
+![img-20180701-wa0004](https://user-images.githubusercontent.com/39165002/42137682-01e7dc16-7d26-11e8-9f2e-ed5a0ba94936.jpg)
+
+![img-20180701-wa0005](https://user-images.githubusercontent.com/39165002/42137686-0620f132-7d26-11e8-8acc-69ae5cc5ecf2.jpg)
+
+![img-20180701-wa0006](https://user-images.githubusercontent.com/39165002/42137688-09ea78c4-7d26-11e8-9540-349e7c519ea6.jpg)
+
+![img-20180701-wa0007](https://user-images.githubusercontent.com/39165002/42137690-1121ffd6-7d26-11e8-9968-792f403fae52.jpg)
+
+![img-20180701-wa0009](https://user-images.githubusercontent.com/39165002/42137727-90bb9c20-7d26-11e8-99b8-4ecca6d7c022.jpg)
+
+
 
 ## Author of This Project.
 
